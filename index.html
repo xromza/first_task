@@ -24,7 +24,7 @@
       <li><a href="/">Главная страница</a></li>
       <li><a href="#httpkubsu">Ссылка на КубГУ HTTPS</a></li>
       <li><a href="https://example.com/?param1=1&param2=2&param3=3">Ссылка с тремя параметрами</a></li>
-      <li><a href="https://example.com/?id=1">Ссылка с тремя параметрами</a></li>
+      <li><a href="https://example.com/?id=1">Ссылка с параметром id</a></li>
       <li><a href="./index.html">Ссылка на внутреннюю страницу</a></li>
       <li><a href="./2.html">Ссылка на страницу в текущем каталоге</a></li>
       <li><a href="./about/example.html">Ссылка на страницу в каталоге about</a></li>
@@ -83,15 +83,15 @@
           <input type="date" id="birthdate" name="birthdate">
 
           <!--Выбор пола-->
-          <label for="gender">Пол:</label>
+          <label>Пол:</label>
           <div style="flex-direction: row;">
-            <label><input type="radio" id="gender" name="gender" value="female">Женский</label>
+            <label><input type="radio" name="gender" value="female">Женский</label>
             <label><input type="radio" name="gender" value="male">Мужской</label>
           </div>
 
           <!--Выбор любимого языка программирования-->
           <label for="favlang">Любимый язык программирования:</label>
-          <select id="favlang" name="favlang" size="6">
+          <select id="favlang" name="favlang[]" multiple size="6">
             <option value="pascal">Pascal</option>
             <option value="c">C</option>
             <option value="cpp">C++</option>
