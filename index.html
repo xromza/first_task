@@ -64,7 +64,7 @@
           </li>
         </ol>
       </li>
-      <li><a href="ftp://login:password@address:port/file.txt">Ссылка на FTP-сервер с авторизацией</a></li>
+      <li><a href="ftp://login:password@127.0.0.1:21/file.txt">Ссылка на FTP-сервер с авторизацией</a></li>
       <li>
         <h2>Форма</h2>
         <form style="display: flex; flex-direction: column; max-width: 20em; text-align: center;">
@@ -80,12 +80,12 @@
           
           <!--Поле ввода даты рождения-->
           <label for="birthdate">Дата рождения:</label>
-          <input type="date" id="birthdate" name="birthdate" placeholder="01.01.1970">
+          <input type="date" id="birthdate" name="birthdate">
 
           <!--Выбор пола-->
           <label for="gender">Пол:</label>
           <div style="flex-direction: row;">
-            <label><input type="radio" name="gender" value="female">Женский</label>
+            <label><input type="radio" id="gender" name="gender" value="female">Женский</label>
             <label><input type="radio" name="gender" value="male">Мужской</label>
           </div>
 
@@ -108,7 +108,7 @@
           <!--Многострочное поле ввода-->
           <label for="bio">Биография:</label><br>
           <textarea name="bio" id="bio" rows="10" placeholder="Ваша биография"></textarea>
-          
+
           <!--Кнопка "с контрактом ознакомлен"-->
           <label style="text-align: left;">С контрактом ознакомлен(-а) <input type="checkbox" id="contractacceptance" name="contractacceptance"></label>
           <!--Кнопка отправки-->
