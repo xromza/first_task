@@ -67,26 +67,26 @@
       <li><a href="ftp://login:password@127.0.0.1:21/file.txt">Ссылка на FTP-сервер с авторизацией</a></li>
       <li>
         <h2>Форма</h2>
-        <form method="POST" style="display: flex; flex-direction: column; max-width: 20em; text-align: center;">
+        <form action="/" method="POST" style="display: flex; flex-direction: column; max-width: 20em; text-align: center;">
           <!--Поле ввода ФИО-->
           <label for="name">ФИО:</label>
-          <input type="text" id="name" name="name" placeholder="Введите своё ФИО">
+          <input required type="text" id="name" name="name" placeholder="Введите своё ФИО">
           <!--Поле ввода номера телефона-->
           <label for="phone">Телефон:</label>
-          <input type="tel" id="phone" name="phone" placeholder="+7 (999) 123-45-67">
+          <input required type="tel" id="phone" name="phone" placeholder="+7 (999) 123-45-67">
           <!--Поле ввода email-->
           <label for="email">Email:</label>
-          <input type="email" id="email" name="email" placeholder="address@example.com">
+          <input required type="email" id="email" name="email" placeholder="address@example.com">
           
           <!--Поле ввода даты рождения-->
           <label for="birthdate">Дата рождения:</label>
-          <input type="date" id="birthdate" name="birthdate">
+          <input required type="date" id="birthdate" name="birthdate">
 
           <!--Выбор пола-->
           <label>Пол:</label>
           <div style="flex-direction: row;">
-            <label><input type="radio" name="gender" value="female">Женский</label>
-            <label><input type="radio" name="gender" value="male">Мужской</label>
+            <label><input required type="radio" name="gender" value="female">Женский</label>
+            <label><input required type="radio" name="gender" value="male">Мужской</label>
           </div>
 
           <!--Выбор любимого языка программирования-->
@@ -110,7 +110,7 @@
           <textarea name="bio" id="bio" rows="10" placeholder="Ваша биография"></textarea>
 
           <!--Кнопка "с контрактом ознакомлен"-->
-          <label style="text-align: left;">С контрактом ознакомлен(-а) <input type="checkbox" id="contractacceptance" name="contractacceptance"></label>
+          <label style="text-align: left;">С контрактом ознакомлен(-а) <input required type="checkbox" id="contractacceptance" name="contractacceptance"></label>
           <!--Кнопка отправки-->
           <button type="submit">Сохранить</button>
         </form>
